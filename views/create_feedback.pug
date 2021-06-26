@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  main.create-feedback
+    h2.form-title New Feedback
+    
+    if success
+      p.success Woah, Your feedback was sucessfully added!
+
+    if error
+      p.error Hey, looks like you forgot to add a Feedback!
+
+    form(method="POST")
+      input(class="feedback-input" name="title" placeholder="Product or Service")
+      
+      textarea(class="feedback-input" name="body" rows="10" placeholder="Feedback")
+      button.create-feedback-btn Create Feedback

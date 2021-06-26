@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  main.all-feedbacks  
+    h2.feedback-title= feedback.title
+    p.feedback-body#body= feedback.body 
+    
+    
+    script(type="text/javascript").
+      window.onload = function () {
+        document.getElementById('body').innerHTML = marked(document.getElementById('body').innerHTML);
+      }

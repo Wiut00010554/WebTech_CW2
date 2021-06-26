@@ -1,0 +1,13 @@
+mixin link(href, name)
+  a(href=href)&attributes(attributes)= name
+
+header.navbar
+  h1.logo 
+    a(href="/") Feedbacker
+
+  nav.nav
+    ul.nav-items
+      li.nav-item 
+        +link('/feedbacks', 'Feedbacks')(class="nav-link")
+      li.nav-item 
+        +link('/feedbacks/create-feedback', 'Add')(class="nav-link")

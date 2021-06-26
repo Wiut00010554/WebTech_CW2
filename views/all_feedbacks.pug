@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  main.all-feedbacks   
+    if feedbacks.length
+      ul.feedbacks
+        p My Tasks
+        each feedback in feedbacks
+          li.feedback-item 
+            a(href=`feedbacks/${ feedback.id }`)= feedback.title
+            a.delete-feedback(href=`feedbacks/${ feedback.id }/delete`) Delete
+    else
+      p.empty No any feedbacks yet
