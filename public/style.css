@@ -236,14 +236,24 @@
     color: #f8f8f8;
   }
   
+.details-wrapper{
+  width: 80vw;
+  
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
   .feedback-title {
     font-size: 3rem;
     margin-bottom: 1.5rem;
   }
   
   .feedback-body {
-    font-size: 1.4rem;
-    margin-top: 50px;
+    font-size: 1.3rem;
     text-align: center;
   }
   

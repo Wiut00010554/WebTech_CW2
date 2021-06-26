@@ -1,9 +1,10 @@
 extends layout.pug
 
 block content
-  main.all-feedbacks  
-    h2.feedback-title= feedback.title
-    p.feedback-body#body= feedback.body 
+  main.all-feedbacks 
+    div.details-wrapper 
+      h2.feedback-title=feedback.title
+      p.feedback-body=feedback.body 
     
     
     script(type="text/javascript").
