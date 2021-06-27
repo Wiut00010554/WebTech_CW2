@@ -62,7 +62,8 @@
   
   .logo a {
     color: inherit;
-    font-family: 'Knewave', cursive;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
   }
   
   .nav-items {
@@ -80,7 +81,7 @@
   
   .logo a:hover {
     color: #fc5130;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
   }
 
   .nav-link:hover{
