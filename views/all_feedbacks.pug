@@ -4,7 +4,7 @@ block content
   main.all-feedbacks   
     if feedbacks.length
       ul.feedbacks
-        p My Tasks
+        p All feedbacks
         each feedback in feedbacks
           li.feedback-item 
             a(href=`feedbacks/${ feedback.id }`)= feedback.title
