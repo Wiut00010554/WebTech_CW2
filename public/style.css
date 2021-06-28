@@ -210,12 +210,12 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 3px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     background-color: #FF9116;
     transition: .4s ease;
     color: #211F1F;
-    margin-bottom: 5px;
+    border-radius: 30px;
+    border: 1px solid #211F1F;
   }
 
   .feedbacks > li a{
